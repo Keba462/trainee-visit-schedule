@@ -1,0 +1,1 @@
+from .visit_schedules import trainee_visit_schedule
