@@ -5,9 +5,9 @@ from .schedule import trainee_schedule
 trainee_visit_schedule = VisitSchedule(
     name='trainee_visit_schedule',
     verbose_name='trainee',
-    offstudy_model='trainee_subject.subjectoffstudy',
+    offstudy_model='trainee_prn.subjectoffstudy',
     locator_model='trainee_subject.subjectlocator',
-    death_report_model= 'trainee_subject.deatherreport',#'trainee-prn.deathreport',
+    death_report_model= 'trainee_prn.deathreport',
     previous_visit_schedule=None
 )
 

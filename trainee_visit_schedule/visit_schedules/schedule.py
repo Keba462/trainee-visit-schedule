@@ -10,7 +10,7 @@ trainee_schedule = Schedule (
     onschedule_model='trainee_subject.onschedule',
     offschedule_model='trainee_subject.offschedule',
     consent_model='trainee_subject.subjectconsent',
-     appointment_model='edc_appointment.appointment'
+    appointment_model='edc_appointment.appointment'
 
 )
 
