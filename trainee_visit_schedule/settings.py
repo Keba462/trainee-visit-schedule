@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.staticfiles',
     'edc_visit_schedule.apps.AppConfig',
+    'trainee_labs.apps.AppConfig',
+    'trainee_prn.apps.AppConfig',
     'trainee_visit_schedule.apps.AppConfig',
 ]
 

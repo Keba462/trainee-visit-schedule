@@ -1,7 +1,7 @@
 
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule,Visit
-from .requisitions import requisitions
+from .requisitions import subject_requisition
 from .crfs import crf
 
 trainee_schedule = Schedule (
@@ -21,7 +21,7 @@ visit0T = Visit (
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
-    requisitions=requisitions,
+    requisitions=subject_requisition,
     crfs=crf.get('initial'),
     facility_name='5-day clinic'
 
@@ -34,7 +34,7 @@ visit1T = Visit (
     rbase=relativedelta(months=6),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
-    requisitions=requisitions,
+    requisitions=None,
     crfs=crf.get('followup'),
     facility_name='5-day clinic'
 
@@ -46,7 +46,7 @@ visit2T= Visit (
     rbase=relativedelta(months=12),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
-    requisitions=requisitions,
+    requisitions=None,
     crfs=crf.get('followup'),
     facility_name='5-day clinic'
 
